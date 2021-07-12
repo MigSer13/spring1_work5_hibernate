@@ -15,9 +15,12 @@ public class Product {
     @Column(name="price")
     private int price;
 
-    @ManyToOne
-    @JoinColumn(name="customer_id")
-    private Customer customer;
+    @ManyToMany
+    @JoinTable(name="products_customer",
+            joinColumns = @JoinColumn(name="product_id"),
+            inverseJoinColumns = @JoinColumn(name="customer_id")
+    )
+    private List<Customer> customer;
 
     public Product() {
     }

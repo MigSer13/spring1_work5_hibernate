@@ -13,7 +13,11 @@ public class Customer {
     @Column(name="name")
     private String name;
 
-    @OneToMany(mappedBy="customers")
+    @ManyToMany
+    @JoinTable(name="products_customer",
+            joinColumns = @JoinColumn(name="customer_id"),
+            inverseJoinColumns = @JoinColumn(name="product_id")
+    )
     private List<Product> productsList;
 
     public String getName() {
