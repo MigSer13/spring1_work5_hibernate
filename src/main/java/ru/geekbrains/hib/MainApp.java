@@ -22,6 +22,7 @@ public class MainApp {
         List<Product> productsCustomer1 = customer1.getProductsList();
         System.out.println(productsCustomer1);
         session.getTransaction().commit();
+        //
 
     }
 }
