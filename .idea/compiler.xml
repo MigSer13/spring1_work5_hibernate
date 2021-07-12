@@ -6,7 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring1_work5_hibernate" />
+        <module name="java6_Spring1_work5_Hib" />
       </profile>
     </annotationProcessing>
   </component>
